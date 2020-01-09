@@ -53,8 +53,7 @@ In other words, we need a mechanism to identify the index of a movie in the meta
 Content based Recsys(Crew, Keyword,Genre,director)
 Same as above, except we need a few preprocessing steps.
 One important difference is that we use the CountVectorizer() instead of TF-IDF.
-This is because we do not want to down-weight the presence of an actor/director
+This is because  we do not want to down-weight the presence of an actor/director
 if he or she has acted or directed in relatively more movies. It doesn't make much intuitive sense.
-
 
  '''

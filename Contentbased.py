@@ -15,6 +15,7 @@ cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
 #Construct a reverse map of indices and movie titles
 indices = pd.Series(metadata.index, index=metadata['title']).drop_duplicates()
 
+
 def get_recommendations(title,cosine_sim = cosine_sim):
     idx =indices[title]
     sim_score = list(enumerate(cosine_sim[idx]))
@@ -22,5 +23,9 @@ def get_recommendations(title,cosine_sim = cosine_sim):
     sim_score =sim_score[1:11]
     movie_indices = [i[0] for i in sim_score]
     return metadata['title'].iloc[movie_indices]
-
 get_recommendations('The Dark Knight Rises')
+
+
+
+
+

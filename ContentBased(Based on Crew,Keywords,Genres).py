@@ -98,3 +98,4 @@ def get_recommendations(title,cosine_sim = cosine_sim2):
 get_recommendations('The Dark Knight Rises', cosine_sim2)
 get_recommendations('The Godfather',cosine_sim2)
 get_recommendations('Mean Girls',cosine_sim2)
+
